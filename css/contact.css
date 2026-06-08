@@ -1,0 +1,174 @@
+/* ==========================
+   CONTACT SECTION
+========================== */
+
+.abp-contact-section{
+    position:relative;
+    padding:120px 0;
+    background:var(--gradient-section);
+    overflow:hidden;
+}
+
+.abp-contact-container{
+    width:min(1400px,90%);
+    margin:auto;
+}
+
+.abp-contact-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.abp-contact-title h2{
+    font-size:clamp(2.5rem,5vw,4rem);
+    font-weight:800;
+    color:var(--navy);
+    margin-bottom:15px;
+}
+
+.abp-contact-title p{
+    max-width:700px;
+    margin:auto;
+    color:var(--text-mid);
+    line-height:1.8;
+}
+
+/* ==========================
+   CONTACT INFO
+========================== */
+
+.abp-contact-info{
+    max-width: 500px;
+}
+
+.abp-contact-card{
+    background:var(--glass);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.3);
+    border-radius:var(--radius);
+    padding:30px;
+    align-items:flex-start;
+    gap:20px;
+    box-shadow:var(--shadow-sm);
+    transition:.4s ease;
+}
+
+.abp-contact-card:hover{
+    transform:translateY(-8px);
+    box-shadow:var(--shadow-lg);
+}
+
+.abp-contact-icon{
+    width:70px;
+    height:70px;
+    min-width:70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:18px;
+    background:var(--gradient-accent);
+    color:var(--white);
+    font-size:28px;
+}
+
+.abp-contact-card h3{
+    color:var(--navy);
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.abp-contact-card p{
+    color:var(--text-mid);
+    line-height:1.8;
+}
+
+/* ==========================
+   MAP
+========================== */
+
+.abp-map-section{
+    background:var(--white);
+}
+
+.abp-map-container{
+    width:100%;
+    height:550px;
+    overflow:hidden;
+}
+
+.abp-map-container iframe{
+    width:100%;
+    height:100%;
+    border:none;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:991px){
+
+    .abp-contact-section{
+        padding:90px 0;
+    }
+
+    .abp-contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .abp-map-container{
+        height:420px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .abp-contact-card{
+        flex-direction:column;
+    }
+
+    .abp-contact-form{
+        padding:30px;
+    }
+
+    .abp-contact-form h3{
+        font-size:28px;
+    }
+
+    .abp-map-container{
+        height:350px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .abp-contact-section{
+        padding:70px 0;
+    }
+
+    .abp-contact-title h2{
+        font-size:2rem;
+    }
+
+    .abp-contact-card{
+        padding:24px;
+    }
+
+    .abp-contact-form{
+        padding:24px;
+    }
+
+    .abp-contact-icon{
+        width:60px;
+        height:60px;
+        min-width:60px;
+        font-size:24px;
+    }
+
+    .abp-map-container{
+        height:300px;
+    }
+
+}
